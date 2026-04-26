@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import { MessageSquare, Search, Send, Paperclip, Smile, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
@@ -43,7 +44,7 @@ function formatDate(iso: string) {
   return date.toLocaleDateString('fr-FR');
 }
 
-export default function MessagesPage() {
+function MessagesPageInner() {
   const searchParams = useSearchParams();
   const requestedConversationId = searchParams.get('conversation');
 
@@ -418,5 +419,13 @@ export default function MessagesPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function MessagesPage() {
+  return (
+    <Suspense>
+      <MessagesPageInner />
+    </Suspense>
   );
 }

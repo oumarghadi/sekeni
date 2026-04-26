@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import { Mail, MessageSquare, MapPin, Phone, Send, CheckCircle2, ArrowLeft, Clock } from 'lucide-react';
 
 function buildPrefilledSubject(intent: string | null, title: string | null) {
@@ -67,7 +68,7 @@ const contactCards = [
   },
 ];
 
-export default function ContactPage() {
+function ContactPageInner() {
   const searchParams = useSearchParams();
   const propertyId = searchParams.get('property');
   const title = searchParams.get('title');
@@ -365,5 +366,13 @@ export default function ContactPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense>
+      <ContactPageInner />
+    </Suspense>
   );
 }
