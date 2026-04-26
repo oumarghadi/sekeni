@@ -79,7 +79,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           ref={imgRef}
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&auto=format&fit=crop&q=85"
+          src="/images/backgroud.jpeg"
           alt=""
           aria-hidden="true"
           loading="eager"
