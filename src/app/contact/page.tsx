@@ -40,7 +40,7 @@ const contactCards = [
     icon: Phone,
     title: 'اتصل بنا',
     detail: PHONE,
-    action: `tel:+22241926083`,
+    action: `https://wa.me/22241926083`,
     actionLabel: 'اتصل الآن',
     ltr: true,
     accent: '#4DA8DA',
