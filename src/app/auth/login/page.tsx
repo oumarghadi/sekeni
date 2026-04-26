@@ -117,7 +117,7 @@ export default function LoginPage() {
       <div className="hidden lg:flex w-[52%] relative flex-col overflow-hidden">
         {/* Background image */}
         <img
-          src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=1400&auto=format&fit=crop&q=85"
+          src="/images/backgroud2.jpeg"
           alt=""
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover"

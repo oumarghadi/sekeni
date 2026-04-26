@@ -126,7 +126,7 @@ export default function RegisterPage() {
       {/* ── LEFT: Visual Panel ── */}
       <div className="hidden lg:flex w-[44%] relative flex-col overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&auto=format&fit=crop&q=85"
+          src="/images/backgroud2.jpeg"
           alt=""
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover"
