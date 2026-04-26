@@ -32,15 +32,15 @@ function buildPrefilledMessage(params: {
   return '';
 }
 
-const PHONE = '+222 46603985';
-const WHATSAPP = '22246603985';
+const PHONE = '+222 41 92 60 83';
+const WHATSAPP = '22241926083';
 
 const contactCards = [
   {
     icon: Phone,
     title: 'اتصل بنا',
     detail: PHONE,
-    action: `tel:+22246603985`,
+    action: `tel:+22241926083`,
     actionLabel: 'اتصل الآن',
     ltr: true,
     accent: '#4DA8DA',

@@ -289,7 +289,7 @@ export default function PropertyDetailPage() {
       `مرحباً، أنا مهتم بـ${intentLabel} العقار: "${property.titleAr}". هل يمكنكم مساعدتي؟`
     );
 
-    window.open(`https://wa.me/22246603985?text=${message}`, '_blank');
+    window.open(`https://wa.me/22241926083?text=${message}`, '_blank');
   }
 
   function openVisitModal() {
@@ -1011,7 +1011,7 @@ export default function PropertyDetailPage() {
                   onKeyDown={e => {
                     if (e.key === 'Enter' && helpPhone.trim()) {
                       const msg = encodeURIComponent(`مرحباً، رقمي ${helpPhone.trim()}. أحتاج مساعدة في العقار: "${property.titleAr}". أرجو التواصل.`);
-                      window.open(`https://wa.me/22246603985?text=${msg}`, '_blank');
+                      window.open(`https://wa.me/22241926083?text=${msg}`, '_blank');
                     }
                   }}
                   className="flex-grow bg-white border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-[var(--secondary)]/20"
@@ -1021,7 +1021,7 @@ export default function PropertyDetailPage() {
                   disabled={!helpPhone.trim()}
                   onClick={() => {
                     const msg = encodeURIComponent(`مرحباً، رقمي ${helpPhone.trim()}. أحتاج مساعدة في العقار: "${property.titleAr}". أرجو التواصل.`);
-                    window.open(`https://wa.me/22246603985?text=${msg}`, '_blank');
+                    window.open(`https://wa.me/22241926083?text=${msg}`, '_blank');
                   }}
                 >
                   إرسال
