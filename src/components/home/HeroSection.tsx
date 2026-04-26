@@ -124,12 +124,19 @@ export function HeroSection() {
       <div className="container mx-auto px-6 relative z-10 text-center space-y-10 pt-28 pb-20">
 
         {/* Eyebrow */}
-        <div className="animate-fadein stagger-1 inline-flex items-center gap-2.5 mx-auto">
-          <span className="h-px w-8 bg-[var(--gold)]" />
-          <span className="text-[var(--gold)] text-[11px] font-bold uppercase tracking-[0.22em]">
-            المنصة الرائدة للعقارات في موريتانيا
+        <div className="animate-fadein stagger-1 flex flex-col items-center gap-2 mx-auto">
+          <div className="inline-flex items-center gap-2.5">
+            <span className="h-px w-8 bg-[var(--gold)]" />
+            <span className="text-[var(--gold)] text-[11px] font-bold uppercase tracking-[0.22em]">
+              المنصة الرائدة للعقارات في موريتانيا
+            </span>
+            <span className="h-px w-8 bg-[var(--gold)]" />
+          </div>
+          {/* Hassaniya badge */}
+          <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-white/80 text-[11px] font-bold tracking-wide">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold)] shrink-0" />
+            الديار — بيوتكم في يدينكم
           </span>
-          <span className="h-px w-8 bg-[var(--gold)]" />
         </div>
 
         {/* Logo */}
@@ -192,7 +199,7 @@ export function HeroSection() {
             <span className="text-gradient-secondary">في مكان واحد</span>
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto animate-fadein stagger-4 leading-relaxed mt-4">
-            اكتشف المساكن الأكثر تميزاً في موريتانيا، مختارة بعناية لتناسب ذوقك الرفيع.
+            اكتشف أجمل الديار في موريتانيا — مختارة بعناية لتناسب ذوقك الرفيع.
           </p>
         </div>
 
