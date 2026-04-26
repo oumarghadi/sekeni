@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import {
   Mail, Lock, User, Phone,
@@ -140,7 +139,10 @@ export default function RegisterPage() {
             <span className="text-base font-black text-white">
               Sekeni <span className="text-[var(--gold)]">Sa</span>
             </span>
-            <Image src="/images/logo.png" alt="Sekeni" width={32} height={32} className="object-contain brightness-0 invert" />
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#4DA8DA" fillOpacity="0.22"/>
+              <path d="M18 7L6 17h3v11h7v-7h4v7h7V17h3L18 7z" fill="#4DA8DA"/>
+            </svg>
           </Link>
 
           {/* Copy */}
@@ -189,11 +191,17 @@ export default function RegisterPage() {
       <div className="flex-1 flex flex-col bg-white overflow-y-auto">
 
         {/* Mobile header */}
-        <div className="lg:hidden flex items-center justify-between px-6 py-5 border-b border-[var(--outline-variant)]">
+        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-[var(--outline-variant)]">
           <Link href="/auth/login" className="text-sm font-black text-[var(--on-surface-variant)] hover:text-[var(--primary)] transition-colors">
             دخول
           </Link>
-          <span className="text-base font-black text-[var(--primary)]">Sekeni <span className="text-[var(--secondary)]">Sa</span></span>
+          <Link href="/" className="flex items-center gap-2">
+            <span className="text-base font-black text-[var(--primary)]">Sekeni <span className="text-[var(--secondary)]">Sa</span></span>
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#4DA8DA" fillOpacity="0.15"/>
+              <path d="M18 7L6 17h3v11h7v-7h4v7h7V17h3L18 7z" fill="#4DA8DA"/>
+            </svg>
+          </Link>
         </div>
 
         <div className="flex-1 flex items-center justify-center px-8 py-10 lg:px-14">
