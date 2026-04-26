@@ -134,11 +134,47 @@ export function HeroSection() {
 
         {/* Logo */}
         <div className="animate-fadein stagger-2 flex justify-center">
-          <img
-            src="/images/logo-sekeni.png"
-            alt="سكنى"
-            className="h-24 md:h-32 w-auto object-contain rounded-2xl shadow-2xl"
-          />
+          <div className="relative group cursor-default select-none">
+
+            {/* Deep radial glow behind */}
+            <div
+              className="absolute -inset-6 rounded-[3rem] pointer-events-none"
+              style={{
+                background: 'radial-gradient(ellipse at center, rgba(77,168,218,0.28) 0%, rgba(201,168,76,0.10) 55%, transparent 75%)',
+                filter: 'blur(12px)',
+              }}
+            />
+
+            {/* Outer decorative ring — gold */}
+            <div className="absolute -inset-4 rounded-[2.2rem] border border-[#C9A84C]/25 pointer-events-none" />
+            {/* Inner decorative ring — blue */}
+            <div className="absolute -inset-2 rounded-[1.8rem] border border-[#4DA8DA]/35 pointer-events-none" />
+
+            {/* Corner bracket accents */}
+            <div className="absolute -top-1.5 -right-1.5 w-5 h-5 border-t-[2px] border-r-[2px] border-[#4DA8DA]/80 rounded-tr-lg pointer-events-none" />
+            <div className="absolute -top-1.5 -left-1.5  w-5 h-5 border-t-[2px] border-l-[2px] border-[#4DA8DA]/80 rounded-tl-lg pointer-events-none" />
+            <div className="absolute -bottom-1.5 -right-1.5 w-5 h-5 border-b-[2px] border-r-[2px] border-[#C9A84C]/80 rounded-br-lg pointer-events-none" />
+            <div className="absolute -bottom-1.5 -left-1.5  w-5 h-5 border-b-[2px] border-l-[2px] border-[#C9A84C]/80 rounded-bl-lg pointer-events-none" />
+
+            {/* Logo frame */}
+            <div
+              className="relative overflow-hidden rounded-2xl transition-all duration-500 group-hover:scale-[1.03]"
+              style={{
+                boxShadow: '0 8px 40px rgba(0,38,63,0.55), 0 0 0 1px rgba(255,255,255,0.12), 0 0 30px rgba(77,168,218,0.18)',
+              }}
+            >
+              <img
+                src="/images/logo-sekeni.png"
+                alt="سكنى"
+                className="h-24 md:h-32 w-auto object-contain block"
+              />
+              {/* Shine sweep on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none" />
+              {/* Top-left glass highlight */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none" />
+            </div>
+
+          </div>
         </div>
 
         {/* Headline */}
