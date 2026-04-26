@@ -135,7 +135,7 @@ export function HeroSection() {
         {/* Logo */}
         <div className="animate-fadein stagger-2 flex justify-center">
           <img
-            src="/images/logo-sekeni.jpg"
+            src="/images/logo-sekeni.png"
             alt="سكنى"
             className="h-24 md:h-32 w-auto object-contain rounded-2xl shadow-2xl"
           />
