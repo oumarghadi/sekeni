@@ -132,16 +132,25 @@ export function HeroSection() {
           <span className="h-px w-8 bg-[var(--gold)]" />
         </div>
 
+        {/* Logo */}
+        <div className="animate-fadein stagger-2 flex justify-center">
+          <img
+            src="/images/logo-sekeni.jpg"
+            alt="سكنى"
+            className="h-24 md:h-32 w-auto object-contain rounded-2xl shadow-2xl"
+          />
+        </div>
+
         {/* Headline */}
-        <div className="space-y-3 max-w-4xl mx-auto">
+        <div className="space-y-2 max-w-3xl mx-auto">
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-[1.1] animate-fadein stagger-2"
+            className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] animate-fadein stagger-3"
             style={{ textShadow: '0 4px 40px rgba(0,0,0,0.35)' }}
           >
             كل ما تحتاجه
           </h1>
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] animate-fadein stagger-3"
+            className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] animate-fadein stagger-3"
             style={{ textShadow: '0 4px 40px rgba(0,0,0,0.35)' }}
           >
             <span className="text-gradient-secondary">في مكان واحد</span>
