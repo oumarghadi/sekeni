@@ -26,15 +26,15 @@ export function FeaturedSection() {
         <RevealSection className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-12">
           <div className="text-right space-y-3">
             <div className="flex items-center gap-2.5 justify-end">
-              <span className="text-[var(--gold)] text-[11px] font-black uppercase tracking-[0.20em]">مختاراتنا لك</span>
+              <span className="text-[var(--gold)] text-[11px] font-black uppercase tracking-[0.20em]">مختارين ليك</span>
               <span className="h-px w-8 bg-[var(--gold)]" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-black text-[var(--primary)]">عقارات مميزة</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-[var(--primary)]">ديار مميزة</h2>
           </div>
           <Link href="/properties">
             <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[var(--outline)] text-sm font-black text-[var(--primary)] hover:bg-[var(--surface-low)] hover:border-[var(--secondary)] transition-all group">
               <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-              عرض الكل
+              شوف الكل
             </button>
           </Link>
         </RevealSection>

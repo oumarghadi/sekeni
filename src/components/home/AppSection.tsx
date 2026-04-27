@@ -9,9 +9,9 @@ import { getFirstImage, operationTypeLabel } from '@/lib/listings';
 import type { Listing } from '@/lib/listings';
 
 const benefits = [
-  'نشر إعلانك في دقائق',
-  'وصول لآلاف الباحثين',
-  'إدارة كاملة من لوحة تحكم',
+  'بيّن دارك في دقايق',
+  'آلاف الدايرين يشوفوك',
+  'تسيير كامل من لوحة تحكم',
 ];
 
 const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&auto=format&fit=crop&q=80';
@@ -89,16 +89,16 @@ export function AppSection() {
               <div className="max-w-xl text-right space-y-6">
                 <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white/80 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">
                   <span className="w-1.5 h-1.5 rounded-full bg-[var(--secondary)] inline-block" />
-                  للمعلنين والوسطاء
+                  للبياعين والوسطاء
                 </div>
 
                 <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">
-                  هل ترغب في<br />
-                  <span className="text-[var(--secondary)]">بيع عقارك؟</span>
+                  واش تبغي<br />
+                  <span className="text-[var(--secondary)]">تبيع دارك؟</span>
                 </h2>
 
                 <p className="text-white/65 text-base leading-relaxed">
-                  نوفر لك المنصة الأسرع والأكثر موثوقية لعرض عقارك لآلاف الباحثين. ابدأ الآن واكتشف قوة سكنى موريتانيا.
+                  نوفروا ليك المنصة الأسرع والأمزيان لعرض دارك عند آلاف الدايرين. ابدأ دروك واكتشف قوة سكنى في بلادنا.
                 </p>
 
                 <ul className="space-y-3">
@@ -113,12 +113,12 @@ export function AppSection() {
                 <div className="flex flex-wrap items-center gap-4 justify-end pt-2">
                   <Link href="/auth/register">
                     <button className="px-7 py-3.5 rounded-2xl bg-white text-[var(--primary)] font-black text-sm hover:bg-white/90 transition-all shadow-[0_4px_24px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
-                      ابدأ الآن مجاناً
+                      ابدأ دروك بالمجان
                     </button>
                   </Link>
                   <Link href="/about">
                     <button type="button" className="text-white/70 hover:text-white text-sm font-bold underline underline-offset-4 transition-colors">
-                      تعرف على المزيد
+                      شوف المزيد
                     </button>
                   </Link>
                 </div>
