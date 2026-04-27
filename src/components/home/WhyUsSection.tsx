@@ -15,16 +15,16 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    title:       'كل اللي تدور',
-    description: 'من اشري وبيع وكرا وبناء — كل شي في منصة واحدة مزيانة.',
+    title:       'مركزية الخدمات',
+    description: 'كل ما تحتاجه من شراء وبيع وتأجير وبناء في منصة واحدة متكاملة.',
     icon:        LayoutGrid,
     accent:      'var(--secondary)',
     bg:          'var(--secondary-light)',
     number:      '01',
   },
   {
-    title:       'سهل وبسيط',
-    description: 'واجهة مستخدم عصرية تخليك توصل للي تبغي بضغطات قليلة.',
+    title:       'بساطة التجربة',
+    description: 'واجهة مستخدم عصرية وسهلة الاستخدام تضمن لك الوصول إلى مبتغاك بضغطات قليلة.',
     icon:        Zap,
     accent:      '#F4A261',
     bg:          '#fef3e8',
@@ -32,15 +32,15 @@ const features: Feature[] = [
   },
   {
     title:       'ثقة ومصداقية',
-    description: 'نتعاملوا مع أحسن الوسطاء في بلادنا لضمان ديار مزيانة وموثوقة.',
+    description: 'نتعامل مع أفضل الوسطاء والمطورين العقاريين لضمان جودة وموثوقية العقارات المدرجة.',
     icon:        ShieldCheck,
     accent:      '#10b981',
     bg:          '#ecfdf5',
     number:      '03',
   },
   {
-    title:       'التميز فوق كل شي',
-    description: 'نهتموا بالتفاصيل لنقدموا ليك ديار مش بس مساحات، بل تجارب معيشية.',
+    title:       'تركيز على التميز',
+    description: 'نهتم بالتفاصيل المعمارية والجمالية لنقدم لك عقارات ليست مجرد مساحات، بل تجارب معيشية.',
     icon:        Heart,
     accent:      '#ef4444',
     bg:          '#fef2f2',
@@ -137,15 +137,15 @@ export function WhyUsSection() {
           <div className="inline-flex items-center gap-2.5 mx-auto">
             <span className="h-px w-8 bg-[var(--gold)]" />
             <span className="text-[var(--gold)] text-[11px] font-black uppercase tracking-[0.20em]">
-              علاش سكنى موريتانيا؟
+              لماذا سكنى موريتانيا؟
             </span>
             <span className="h-px w-8 bg-[var(--gold)]" />
           </div>
           <h2 className="text-3xl md:text-5xl font-black text-[var(--primary)]">
-            احنا نجددوا تجربة الديار
+            نحن نعيد تعريف التجربة العقارية
           </h2>
           <p className="text-[var(--on-surface-variant)] text-base max-w-xl mx-auto leading-relaxed">
-            أربعة مبادئ تخلي سكنى الخيار الأول للديار في بلادنا
+            أربعة مبادئ أساسية تجعل سكنى الخيار الأول للعقارات في موريتانيا
           </p>
         </RevealSection>
 

@@ -5,8 +5,8 @@ import { RevealSection } from '@/components/ui/RevealSection';
 
 const categories = [
   {
-    title:    'اشري',
-    subtitle: 'اشري دارك اللي تبغي دروك',
+    title:    'شراء',
+    subtitle: 'تملّك منزل أحلامك اليوم',
     tag:      'للبيع',
     image:    'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&auto=format&fit=crop&q=80',
     href:     '/properties?type=buy',
@@ -14,8 +14,8 @@ const categories = [
     tagColor: 'bg-[var(--secondary)]',
   },
   {
-    title:    'الكرا',
-    subtitle: 'ديار للكرا — بزاف الخيارات',
+    title:    'استئجار',
+    subtitle: 'خيارات مرنة للحياة العصرية',
     tag:      'للإيجار',
     image:    'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&auto=format&fit=crop&q=80',
     href:     '/properties?type=rent',
@@ -23,8 +23,8 @@ const categories = [
     tagColor: 'bg-amber-500',
   },
   {
-    title:    'البناء',
-    subtitle: 'بن دارك على كيفك',
+    title:    'بناء',
+    subtitle: 'حوّل رؤيتك إلى واقع ملموس',
     tag:      'خدمات',
     image:    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&auto=format&fit=crop&q=80',
     href:     '/construction',
@@ -42,10 +42,10 @@ export function CategoryCards() {
         <RevealSection className="text-center mb-14 space-y-4">
           <div className="inline-flex items-center gap-2.5 mx-auto">
             <span className="h-px w-8 bg-[var(--gold)]" />
-            <span className="text-[var(--gold)] text-[11px] font-black uppercase tracking-[0.20em]">ابدأ رحلة الديار</span>
+            <span className="text-[var(--gold)] text-[11px] font-black uppercase tracking-[0.20em]">ابدأ رحلتك العقارية</span>
             <span className="h-px w-8 bg-[var(--gold)]" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-black text-[var(--primary)]">اختر اللي يوافقك</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[var(--primary)]">اختر ما يناسبك</h2>
         </RevealSection>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -89,7 +89,7 @@ export function CategoryCards() {
                   </h3>
                   <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${cat.gradient} text-white text-xs font-black px-4 py-2 rounded-xl opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300`}>
                     <ArrowLeft className="w-3.5 h-3.5" />
-                    شوف المزيد
+                    اكتشف المزيد
                   </div>
                 </div>
 

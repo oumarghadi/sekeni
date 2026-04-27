@@ -10,9 +10,9 @@ const HeroCanvas = dynamic(
 );
 
 const stats = [
-  { value: '+1K',  label: 'دار مسجلة' },
-  { value: '4.8★', label: 'تقييم مزيان' },
-  { value: '24/7', label: 'خدمة دايمة' },
+  { value: '+1K',  label: 'عقار مدرج' },
+  { value: '4.8★', label: 'تقييم العملاء' },
+  { value: '24/7', label: 'دعم فني' },
 ];
 
 export function HeroSection() {
